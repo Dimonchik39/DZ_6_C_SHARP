@@ -6,17 +6,6 @@ Console.Clear();
 Console.WriteLine("Введите цифры через пробел");
 int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-void PrintArray(int[] array)
-{
-    Console.Write(" ");
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
-        else Console.Write($"{array[i]}");
-    }
-    Console.Write(" ");
-}
-
 int Digit(int[] array)
 {
     int count = 0;
@@ -27,6 +16,5 @@ int Digit(int[] array)
     return count;
 }
 int results = Digit(arr); 
-PrintArray(arr);
 Console.Write($" -> {results} цифр(ы) больше 0");
 
