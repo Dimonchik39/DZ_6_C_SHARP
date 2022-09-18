@@ -16,5 +16,5 @@ int Digit(int[] array)
     return count;
 }
 int results = Digit(arr); 
-Console.Write($" -> {results} цифр(ы) больше 0");
+Console.Write($" -> {results} числа(ел) больше 0");
 
