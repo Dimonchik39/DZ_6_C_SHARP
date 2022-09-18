@@ -2,7 +2,6 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-Console.Clear();
 Console.WriteLine("Введите цифры через пробел");
 int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
